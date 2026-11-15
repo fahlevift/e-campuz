@@ -1,0 +1,38 @@
+name: Pengajuan Fitur (Feature Request)
+description: Usulkan fitur baru atau peningkatan pengalaman pengguna di E-Campuz
+title: "[Feat]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Punya ide untuk membuat **E-Campuz** lebih bermanfaat bagi mahasiswa atau dosen? Ceritakan detailnya di bawah ini.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Masalah atau Kebutuhan yang Ingin Diselesaikan
+      description: Jelaskan kendala atau skenario penggunaan yang melatarbelakangi usulan ini.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solusi yang Diusulkan
+      description: Gambarkan perilaku atau tampilan fitur yang Anda harapkan.
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Peran Pengguna Terkait
+      options:
+        - Mahasiswa
+        - Dosen
+        - Keduanya (Mahasiswa & Dosen)
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Konteks Tambahan
+      description: Tambahkan referensi UI, alur, atau catatan lain jika ada.

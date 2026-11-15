@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Kebijakan Keamanan (Security)
+    url: https://github.com/fahlevift/e-campuz/security/advisories/new
+    about: Laporkan kerentanan keamanan secara privat, bukan di issue publik.

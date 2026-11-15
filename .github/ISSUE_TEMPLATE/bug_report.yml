@@ -1,0 +1,48 @@
+name: Laporan Bug (Bug Report)
+description: Laporkan error, crash, atau perilaku aplikasi yang tidak sesuai
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih telah membantu meningkatkan **E-Campuz**! Mohon lengkapi detail berikut agar bug lebih mudah direproduksi.
+  - type: textarea
+    id: description
+    attributes:
+      label: Deskripsi Masalah
+      description: Jelaskan secara singkat apa yang terjadi dan apa yang seharusnya terjadi.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah Reproduksi
+      description: Langkah-langkah untuk memicu masalah ini.
+      placeholder: |
+        1. Buka halaman '...'
+        2. Tekan tombol '...'
+        3. Muncul error '...'
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android (APK / Expo Go)
+        - iOS (Expo Go / Simulator)
+        - Web Browser
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Versi OS / Perangkat
+      placeholder: "Contoh: Android 14 (Pixel 7) / Chrome 130"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log Error / Tangkapan Layar
+      description: Tempelkan log console/Metro atau lampirkan screenshot jika ada (jangan sertakan isi .env atau token).
+      render: shell
