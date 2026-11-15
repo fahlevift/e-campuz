@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "E-Campuz",
+    "slug": "e-campuz",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "ecampuz",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#EFF6FF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "id.ac.kampus.ecampuz"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1E40AF"
+      },
+      "package": "id.ac.kampus.ecampuz"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "color": "#1E40AF"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "6125f75d-2b9b-4816-8b7c-229adbacd73b"
+      }
+    }
+  }
+}
